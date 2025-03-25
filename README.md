@@ -89,7 +89,7 @@ This section will explain how to install and use this mod.
     <p style="padding-left: 3em;">
         <i>For the purpose of these directions, "[SPT]" represents your SPT folder path.</i>
         </br></br>
-        Start by downloading the mod from the <a href="">Releases</a> page.
+        Start by downloading the mod from the <a href="https://github.com/ClaytonHebbe96/BandanaOfProtection/releases/tag/311.0.0">Releases</a> page.
         </br></br>
         Follow these steps to install and configure the mod:
         <ol style="margin-left: 3em;">
