@@ -2,7 +2,6 @@
 .eslintrc.json
 build.mjs
 .buildignore
-tsconfig.json
 dist
 node_modules
 types
