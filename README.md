@@ -111,6 +111,9 @@ This section will explain how to install and use this mod.
 Edit <code>'./config.jsonc'</code> file as desired. Specify which areas to protect, the ammount of protection, and which item you want BoP to look like. You can even customize trader pricing and loyalty level requirements to make it easier or harder on yourself to acquire this item.
 </br></br>
 
+**Important:** When changing the PreFab you must clear your SPT temp files before starting the game up again otherwise the prefab will not properly load and may cause issues.
+</br></br>
+
 ```jsonc
 {
     "ArmorCoverage": {
@@ -220,7 +223,7 @@ Edit <code>'./config.jsonc'</code> file as desired. Specify which areas to prote
 - [x] Get BoP working on SPT v3.11
 - [ ] Fix bugs found/reported in SPT v3.11
 
-View/Report issues [here](https://InsertIssuesLinkHere)
+View/Report issues [here](https://github.com/ClaytonHebbe96/BandanaOfProtection/issues)
 
 <!-- CONTRIBUTING -->
 <h2>Contributing</h2>
