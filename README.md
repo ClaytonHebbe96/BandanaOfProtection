@@ -227,6 +227,14 @@ View/Report issues [here](https://github.com/ClaytonHebbe96/BandanaOfProtection/
 
 <!-- CONTRIBUTING -->
 <h2>Contributing</h2>
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+</br></br>
+
+1. Fork the project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m "Add some amazing feature"`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
 <!-- LICENSE -->
 <h2>License</h2>
