@@ -5,29 +5,20 @@ import { ConfigTypes } from "@spt/models/enums/ConfigTypes";
 import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { IItemConfig } from "@spt/models/spt/config/IItemConfig";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
-import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 import { FileSystemSync } from "@spt/utils/FileSystemSync";
 import { IPmcConfig } from "@spt/models/spt/config/IPmcConfig";
 import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
-import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
 import { jsonc } from "jsonc";
 import path from "path";
 
-class Bandana implements IPreSptLoadMod, IPostDBLoadMod
+class Bandana implements IPostDBLoadMod
 {
     private pkg;
     private bopDB = require("../database/dbItems.json");
     private bopTA = require("../database/ragmanAssort.json");
 
-    public preSptLoad(container: DependencyContainer): void
-    {
-        const logger = container.resolve<ILogger>("WinstonLogger");
-        logger.logWithColor("[ BoP ] Loading Bandana of Protection", LogTextColor.GREEN);
-    }
-
     public postDBLoad(container: DependencyContainer): void
     {
-        const logger = container.resolve<ILogger>("WinstonLogger");
         const db = container.resolve<DatabaseServer>("DatabaseServer").getTables();
         const locales = db.locales.global;
         const handbook = db.templates.handbook.Items;
@@ -83,7 +74,7 @@ class Bandana implements IPreSptLoadMod, IPostDBLoadMod
 
         this.setConfigOptions(container)
 
-        logger.logWithColor("[ BoP ] Cached Successfully", LogTextColor.GREEN);
+        console.log("[ BoP ] Cached Successfully");
     }
 
     public setConfigOptions(container: DependencyContainer): void
