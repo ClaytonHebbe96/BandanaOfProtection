@@ -1,0 +1,8 @@
+.eslintignore
+.eslintrc.json
+build.mjs
+tsconfig.json
+dist
+node_modules
+types
+.buildignore
